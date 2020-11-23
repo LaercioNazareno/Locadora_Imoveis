@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Locadora_Imoveis.Models;
+using locadora.Models;
 
-namespace Locadora_Imoveis.Controllers
+namespace locadora.Controllers
 {
     public class HomeController : Controller
     {

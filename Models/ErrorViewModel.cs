@@ -1,6 +1,6 @@
 using System;
 
-namespace Locadora_Imoveis.Models
+namespace locadora.Models
 {
     public class ErrorViewModel
     {

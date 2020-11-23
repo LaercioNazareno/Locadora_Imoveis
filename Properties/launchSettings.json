@@ -3,8 +3,8 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:61893",
-      "sslPort": 44314
+      "applicationUrl": "http://localhost:20537",
+      "sslPort": 44366
     }
   },
   "profiles": {
@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Locadora_Imoveis": {
+    "locadora": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,

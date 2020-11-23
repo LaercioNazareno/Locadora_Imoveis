@@ -1,0 +1,27 @@
+﻿@model locadora.Models.Contrato
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Contrato</h2>
+<form asp-action="Edit" asp-antiforgery="true" method="POST">
+    <input asp-for="Id" type="hidden" placeholder="Informe o nome"/>
+    <div class="form-group">
+        <label asp-for="LocatarioId"></label>
+        <select asp-for="LocatarioId" class="form-control" asp-items="ViewBag.SelecionadorLocatario"></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="ImovelId"></label>
+        <select asp-for="ImovelId" class="form-control" asp-items="ViewBag.SelecionadorImovel"></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="DataContratacao"></label>
+        <input asp-for="DataContratacao" class="form-control" placeholder="Informe o Estado"/>
+    </div>
+    <div class="form-group">
+        <label asp-for="DataEncerramento"></label>
+        <input asp-for="DataEncerramento" class="form-control" placeholder="Informe o Cep"/>
+    </div>
+    <input type="submit" value="Salvar" class="btn btn-primary"/>
+</form> 

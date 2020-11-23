@@ -1,0 +1,47 @@
+﻿@model IEnumerable<locadora.Models.Imovel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Imovel</h2>
+
+<p>
+    <a asp-action="Details">Novo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Locador.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.QuantidadeComodos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Area)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.Id">
+                    @Html.DisplayFor(modelItem => item.Locador.Nome)
+                </a>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QuantidadeComodos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Area)
+            </td>
+            <td> 
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
