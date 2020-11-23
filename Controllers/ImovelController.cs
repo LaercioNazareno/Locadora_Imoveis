@@ -21,7 +21,7 @@ namespace locadora.Controllers
         public IActionResult Details(long Id)
         {
             Imovel v_imovel = _context.Imovel.Where(x=>x.Id == Id).ToList().FirstOrDefault(); 
-            ViewBag.Selecionador = LocatarioList();
+            ViewBag.SelecionadorLocatario = LocatarioList();
             return View("Imovel", v_imovel);
         }
         public IActionResult Delete(long Id)

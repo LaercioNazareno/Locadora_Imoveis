@@ -9,23 +9,23 @@
     <input asp-for="Id" type="hidden"/>
     
     <div class="form-group">
-        <label asp-for="LocatarioId"></label>
+        <label asp-for="LocatarioId">Locatario</label>
         <select asp-for="LocatarioId" class="form-control" asp-items="ViewBag.Selecionador"></select>
     </div>
     <div class="form-group">
-        <label asp-for="DataEmissao"></label>
+        <label asp-for="DataEmissao">Data de Emissão</label>
         <input asp-for="DataEmissao" class="form-control" placeholder="Informe o Complemento"/>
     </div>
     <div class="form-group">
-        <label asp-for="DataVencimento"></label>
+        <label asp-for="DataVencimento">Data de Vencimento</label>
         <input asp-for="DataVencimento" class="form-control" placeholder="Informe o Complemento"/>
     </div>
     <div class="form-group">
-        <label asp-for="ValorCobranca"></label>
+        <label asp-for="ValorCobranca">Valor da Cobrança</label>
         <input asp-for="ValorCobranca" class="form-control" placeholder="Informe o Complemento"/>
     </div>
     <div class="form-group">
-        <label asp-for="ValorJuros"></label>
+        <label asp-for="ValorJuros">Valor dos Juros</label>
         <input asp-for="ValorJuros" class="form-control" placeholder="Informe o Complemento"/>
     </div>
     <input type="submit" value="Salvar" class="btn btn-primary"/>

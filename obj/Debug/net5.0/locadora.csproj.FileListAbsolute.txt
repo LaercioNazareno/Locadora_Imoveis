@@ -311,3 +311,8 @@
 /home/laercio/Projetos/Dotnet/Locadora_Imoveis/obj/Debug/net5.0/ref/locadora.dll
 /home/laercio/Projetos/Dotnet/Locadora_Imoveis/obj/Debug/net5.0/locadora.pdb
 /home/laercio/Projetos/Dotnet/Locadora_Imoveis/obj/Debug/net5.0/locadora.genruntimeconfig.cache
+/home/laercio/Projetos/Dotnet/Locadora_Imoveis/bin/Debug/net5.0/publish/publish/web.config
+/home/laercio/Projetos/Dotnet/Locadora_Imoveis/bin/Debug/net5.0/publish/publish/appsettings.Development.json
+/home/laercio/Projetos/Dotnet/Locadora_Imoveis/bin/Debug/net5.0/publish/publish/appsettings.json
+/home/laercio/Projetos/Dotnet/Locadora_Imoveis/bin/Debug/net5.0/publish/publish/locadora.deps.json
+/home/laercio/Projetos/Dotnet/Locadora_Imoveis/bin/Debug/net5.0/publish/publish/locadora.runtimeconfig.json

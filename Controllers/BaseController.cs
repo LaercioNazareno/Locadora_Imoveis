@@ -1,3 +1,8 @@
+using System.Text;
+using System.IO;
+using System.Runtime.Serialization.Json;
+using System;
+using System.Net.Http;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
@@ -18,7 +23,7 @@ namespace locadora.Controllers
         }
         protected SelectList ImovelList(){
             var dictionary = new Dictionary<long, string>();
-            dictionary.Add(0,"Selelcione um Imovel");
+            dictionary.Add(0,"Selelcione um Imóvel");
             List<Imovel> ImovelList = _context.Imovel.ToList();
             foreach (var imovel in ImovelList)
             {
@@ -28,7 +33,7 @@ namespace locadora.Controllers
         }
         protected SelectList LocadorList(){
             var dictionary = new Dictionary<long, string>();
-            dictionary.Add(0,"Selelcione Um CPF");
+            dictionary.Add(0,"Selelcione um CPF");
             List<Locador> locadoresList = _context.Locador.ToList();
             foreach (var cliente in locadoresList)
             {
@@ -38,7 +43,7 @@ namespace locadora.Controllers
         }
         protected SelectList LocatarioList(){
             var dictionary = new Dictionary<long, string>();
-            dictionary.Add(0,"Selelcione Um CPF");
+            dictionary.Add(0,"Selelcione um CPF");
             List<Locador> locadoresList = _context.Locador.ToList();
             foreach (var cliente in locadoresList)
             {
